@@ -18,13 +18,13 @@ http://lmoskernel.cn
 
 编译说明
 	进行两个宏切换
-1.Makefile  BOARD_PLATFORM  默认为ARM平台
-	X86BARD = -f ./Makefile.x86
-	ARM_BARD = -f ./Makefile.arm
-	BOARD_PLATFORM = $(ARM_BARD)	//
-	#BOARD_PLATFORM = $(X86BARD)
+1.Makefile  BOARD_PLATFORM  默认为ARM平台  
+	X86BARD = -f ./Makefile.x86  
+	ARM_BARD = -f ./Makefile.arm  
+	BOARD_PLATFORM = $(ARM_BARD)  
+	#BOARD_PLATFORM = $(X86BARD)  
 
-2. include\config.h
+2. include\config.h  
 
-	#define CFG_S3C2440A_PLATFORM
-	//#define CFG_X86_PLATFORM
+	1.#define CFG_S3C2440A_PLATFORM  
+	2.//#define CFG_X86_PLATFORM  
