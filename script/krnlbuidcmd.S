@@ -20,13 +20,13 @@ OJCYFLAGS = -S -O binary
 
 #else
 
-CC		= arm-linux-gcc
-LD		= arm-linux-ld
+CC		= arm-none-eabi-gcc
+LD		= arm-none-eabi-ld
+LIBPATH		= -L /home/rooter/gcc-arm-none-eabi-8-2018-q4-major/lib/gcc/arm-none-eabi/8.2.1/libgcc.a -pipe -g -fno-common
 
 DD		= dd 
-LIBPATH		= -L /opt/armtoolschain/4.4.3/lib/gcc/arm-none-linux-gnueabi/4.4.3/libgcc.a -pipe -g -fno-common 
 RM		= rm # -ld -lgcc  $(LIBPATH)
-OBJCOPY		= arm-linux-objcopy
+OBJCOPY		= arm-none-eabi-objcopy
 OYFLAGS		= -O binary
 CFLAGS          = $(HEADFILE_PATH) -c -O2 -fno-builtin -ffreestanding -std=c99 -save-temps  -march=armv4 -Wall -Wshadow -W -Wconversion -Wno-sign-conversion -fno-stack-protector -fomit-frame-pointer   -fno-ident  -Wno-unused-parameter -Wunused-variable -mtune=arm7tdmi
 LDFLAGS		= -Bstatic -nostdlib -T lmemknllink.lds -Map lmos_em.map

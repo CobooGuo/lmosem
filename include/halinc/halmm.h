@@ -5,6 +5,7 @@
 ****************************************************************/
 #ifndef _HALMM_H
 #define _HALMM_H
+
 #ifdef CFG_S3C2440A_PLATFORM
 
 void init_halmm();
@@ -31,6 +32,7 @@ bool_t hal_memfreeblks_core(adr_t frebadr,size_t blksz);
 bool_t hal_memfreeblks(adr_t frebadr,size_t blksz);
 void test_halmm();
 #endif
+
 #ifdef CFG_X86_PLATFORM
 PUBLIC void phymmarge_t_init(phymmarge_t* initp);
 PUBLIC void ret_phymmarge_adrandsz(machbstart_t* mbsp,phymmarge_t** retpmrvadr,u64_t* retpmrsz);
@@ -43,4 +45,5 @@ PUBLIC void init_phymmarge();
 
 void init_halmm();
 #endif
+
 #endif // _HALINIT_H

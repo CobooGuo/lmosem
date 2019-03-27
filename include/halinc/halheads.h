@@ -15,6 +15,7 @@
 #include "halmm.h"
 #include "halmach.h"
 #include "intabtdistr.h"
+
 #ifdef CFG_X86_PLATFORM
 #include "io.h"
 #include "gdtidt.h"
@@ -26,6 +27,7 @@
 #include "bdvideo.h"
 #include "memmgrmctrl.h"
 #endif
+
 #include "halglobal.h"
 #include "halinit.h"
 #include "printfk.h"

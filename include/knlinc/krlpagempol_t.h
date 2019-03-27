@@ -22,6 +22,7 @@
 #define PHYMSA_MAX 512
 #define PAGE_SIZE 0x1000
 #define PAGE_SZRBIT (12)
+
 typedef struct s_PGLMAP
 {
     adr_t            pgl_start;
@@ -71,8 +72,6 @@ typedef struct s_KMEMPOOL
     msahead_t       mp_msalsthead[PHYMSA_MAX]; 
 #endif
 }kmempool_t;
-
-
 
 
 #endif // KRLPAGEMPOL_T_H

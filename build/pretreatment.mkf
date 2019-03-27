@@ -11,7 +11,7 @@ HEADFILE_PATH = -I ../include/script/ -I ../include/ -I ../include/bastypeinc -I
 CCBUILDPATH	= $(KERNELCE_PATH)
 LMKFBUID = ./lmkfbuild
 CC		= gcc
-CPPFLGSLDS	= $(HEADFILE_PATH) -E -P 
+CPPFLGSLDS	= $(HEADFILE_PATH) -E -P
 
 PREMENTMKI_OBJS = krnlobjs.mki lmemknllink.lds krnlbuidcmd.mki krnlbuidrule.mki lmosemhal.mki lmosemkrl.mki lmosemdrv.mki lmosemlib.mki lmosemtask.mki lmosemlink.mki
 PREMENTMK_OBJS = krnlobjs.mk krnlbuidcmd.mk krnlbuidrule.mk lmosemhal.mk lmosemkrl.mk lmosemdrv.mk lmosemlib.mk lmosemtask.mk lmosemlink.mk

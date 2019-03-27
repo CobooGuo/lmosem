@@ -15,3 +15,16 @@ LMOSEM总体上分为三大层：HAL层（针对ARM体系，方便移植）、�
 # LMOS社区
 
 http://lmoskernel.cn
+
+编译说明
+	进行两个宏切换
+1.Makefile  BOARD_PLATFORM  默认为ARM平台
+	X86BARD = -f ./Makefile.x86
+	ARM_BARD = -f ./Makefile.arm
+	BOARD_PLATFORM = $(ARM_BARD)	//
+	#BOARD_PLATFORM = $(X86BARD)
+
+2. include\config.h
+
+	#define CFG_S3C2440A_PLATFORM
+	//#define CFG_X86_PLATFORM

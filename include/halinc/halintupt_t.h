@@ -159,9 +159,6 @@ typedef struct s_ILNEDSC
 }ilnedsc_t;
 
 
-
-
-
 typedef struct s_INTFLTDSC
 {
     spinlock_t  i_lock;
